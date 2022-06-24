@@ -50,35 +50,3 @@ NetworkResult checkConnectivityResult(ConnectivityResult result) {
       return NetworkResult.offline;
   }
 }
-
-
-
-
-
-// ! after 3.0.0
-// enum NetworkResult {
-//   on,
-//   off;
-
-//   static NetworkResult checkConnectivityResult(ConnectivityResult result) {
-//     switch (result) {
-//       case ConnectivityResult.bluetooth:
-//       case ConnectivityResult.wifi:
-//       case ConnectivityResult.ethernet:
-//       case ConnectivityResult.mobile:
-//         return NetworkResult.on;
-//       case ConnectivityResult.none:
-//         return NetworkResult.off;
-//     }
-//   }
-// }
-
-/// If the result is any of the four types of connectivity, return online, otherwise return offline
-///
-/// Args:
-///   result (ConnectivityResult): The result of the connectivity check.
-///
-/// Returns:
-///   A Future<NetworkResult>
-///
-///
